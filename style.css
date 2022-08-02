@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.wrapper {
+  min-width: 900px;
+  border: 2px solid black;
+  min-height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper .input,
+.wrapper .notes .note {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper .input {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+input {
+  width: 90%;
+  height: 50px;
+  border-radius: 7px;
+  border: 5px solid #87c4ec;
+  font-size: 30px;
+  padding: 0 10px;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: #b0000d;
+  color: white;
+  font-family: 'Courier', sans-serif;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.notes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.note {
+  margin: 5px;
+  border: 1px solid black;
+  width: calc(90% + 50px);
+  height: 51px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  font-size: 25px;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+.btn-delete {
+  background-color: red;
+  width: 70px;
+}
+
+.btn-finish {
+  background-color: green;
+  width: 70px;
+}
+
+p {
+  cursor: default;
+}
