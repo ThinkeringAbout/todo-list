@@ -14,7 +14,6 @@ body {
 
 .wrapper {
   min-width: 900px;
-  border: 2px solid black;
   min-height: 90vh;
   display: flex;
   justify-content: flex-start;
@@ -50,9 +49,10 @@ input {
   border: none;
   background-color: #b0000d;
   color: white;
-  font-family: 'Courier', sans-serif;
-  margin-left: 5px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .notes {
@@ -60,13 +60,14 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .note {
   margin: 5px;
   border: 1px solid black;
   width: calc(90% + 50px);
-  height: 51px;
+  min-height: 51.5px;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -88,4 +89,19 @@ input {
 
 p {
   cursor: default;
+}
+
+.buttons {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.not-active {
+  border-color: grey;
+  color: grey;
+}
+
+.not-active p {
+  text-decoration: line-through;
 }
