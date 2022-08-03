@@ -51,8 +51,6 @@ function deleteNote() {
 function finishNote() {
   let numClass = this.classList[2];
   let number = numClass[numClass.length-1];
-  document.querySelector('.note-' + number).classList.add('not-active');
-  this.style.backgroundColor = "white";
-  this.style.color = "green";
-  this.style.border = "1px solid black";
+  document.querySelector('.note-' + number).classList.toggle('not-active');
+  this.classList.toggle('not-active-btn');
 }
